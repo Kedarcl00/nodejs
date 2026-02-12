@@ -1,0 +1,9 @@
+var http=import('http');
+
+http.createServer(function(req,res){
+    res.writeHead(200,{'Content-Type':'text/html'});
+    let a=8;
+    let b=3;
+    let sum =a+b;
+    res.end(`The sum of ${a} and ${b} is'+sum);
+}).listen(8080);
