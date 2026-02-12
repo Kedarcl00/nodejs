@@ -7,7 +7,7 @@ http.createServer(function(req, res) {
     let b = 3;
     let sum = a + b;
     
-    res.end(`The sum of ${a} and ${b} is ${sum}`);
+    res.end('The addition of '+ a +' and '+ b +' is '+ sum);
     
 }).listen(8080);
 
