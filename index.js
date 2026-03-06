@@ -17,7 +17,7 @@ app.get("/api/users", (req, res) => {
     return res.send(html);
 });
 
-app.get("/a/api/users", (req, res) => {
+app.get("/a/api/users", (req, res) => {  //this will return offetch the last name of every record 
     const lastNames = users.map(user => user.last_name);
     return res.json(lastNames);
 });
