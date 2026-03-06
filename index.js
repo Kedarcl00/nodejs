@@ -17,6 +17,11 @@ app.get("/api/users", (req, res) => {
     return res.send(html);
 });
 
+app.get("/a/api/users", (req, res) => {
+    const lastNames = users.map(user => user.last_name);
+    return res.json(lastNames);
+});
+
 app.listen(port, () => {
     console.log("Server running at http://localhost:3000");
 });
